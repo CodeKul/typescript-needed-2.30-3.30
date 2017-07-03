@@ -1,2 +1,5 @@
-class My { }
+class My {
+
+	name : string;
+ }
 

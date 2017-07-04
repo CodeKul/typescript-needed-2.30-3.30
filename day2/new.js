@@ -18,13 +18,13 @@ let tax = function (num1, num2) {
     return num1 * num2;
 }
 
-function params( num1, salCalc ){
+function params(num1, salCalc) {
     salCalc();
 }
 
 function funRet() {
-    return function() {
-        return function() {
+    return function () {
+        return function () {
             return 'xyz';
         };
     }
@@ -32,9 +32,8 @@ function funRet() {
 
 tax(10, 23);
 
-params(123, function() {});
+params(123, function () { });
 
 let ft = funRet();
 let ft1 = ft();
-console.log('Ft - '+ft1());
-
+console.log('Ft - ' + ft1());
